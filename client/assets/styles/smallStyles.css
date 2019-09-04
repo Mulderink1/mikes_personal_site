@@ -85,6 +85,10 @@ button:focus {
   text-align: left;
   padding-top: 5px;
 }
+.aboutMike ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
 .aboutMike li {
   font-size: 12px;
   font-weight: 200;
@@ -92,6 +96,11 @@ button:focus {
   font-family: "proxima-nova", sans-serif;
   text-align: left;
   padding: 2px;
+}
+.aboutMike li::before {
+  content: "• ";
+  margin: 10px;
+  color: #3498db;
 }
 .aboutMike a {
   text-decoration: none;
