@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="Description" content="Mike Mulderink's Personal Site" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -21,6 +22,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#maincontent">Skip to about Mike</a>
     <div class="bar">
       <div class="nav">
         <ul>
@@ -33,22 +35,22 @@
         <ul>
           <li>
             <button id="myBtn">
-              <img src="./images/mail.svg" />
+              <img src="./images/mail.svg" alt="gmail" title="image" />
             </button>
           </li>
           <li>
             <a href="https://angel.co/mikemulderink"
-              ><img src="./images/angellist.svg"
+              ><img src="./images/angellist.svg" alt="angellist" title="image"
             /></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/mikemulderink"
-              ><img src="./images/linkedin.svg"
+              ><img src="./images/linkedin.svg" alt="LinkedIn" title="image"
             /></a>
           </li>
           <li>
             <a href="https://github.com/Mulderink1"
-              ><img src="./images/github.svg"
+              ><img src="./images/github.svg" alt="github" title="image"
             /></a>
           </li>
         </ul>
@@ -77,9 +79,11 @@
       <img
         class="mikesPic"
         src="https://mikemulderinksite.s3.amazonaws.com/Mike600.jpg"
+        alt="Mike Mulderink"
+        title="image"
       />
     </div>
-    <div class="aboutMike">
+    <main id="maincontent" class="aboutMike">
       <p>
         Mike is a software engineer at SPR consulting in Chicago, Illinois and
         freelance at M APPS based out of Los Angeles, California. SPR usually
@@ -126,7 +130,7 @@
         <a href="https://www.linkedin.com/in/mikemulderink">LinkedIn</a> or
         <a href="https://angel.co/mikemulderink">Anglelist</a>.
       </p>
-    </div>
+    </main>
   </body>
   <script src="./js/index.js"></script>
 </html>
