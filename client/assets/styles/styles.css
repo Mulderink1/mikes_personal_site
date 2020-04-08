@@ -1,84 +1,52 @@
+button {
+  color: #3498db;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+}
+html {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+}
 body {
+  font-size: 1.2rem;
   color: #2c3e50;
   background-color: #ecf0f1;
   text-align: center;
-  font-weight: 0;
-  display: block;
   width: 600px;
-  padding: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-family: "proxima-nova", sans-serif;
 }
-.bar ul {
-  height: 35px;
-  list-style-type: none;
-  padding: 0px;
-  overflow: hidden;
-  padding-top: 10px;
-  padding-bottom: 20px;
+header {
+  padding: 20px 0;
+  display: flex;
+  align-items: flex-end;
 }
-.nav {
+header div,
+header nav {
   width: 50%;
-  float: left;
 }
-.nav li {
-  float: left;
-  padding: 0px;
+header h1 {
+  text-align: left;
+  font-size: 2.7rem;
 }
-.nav li {
-  font-weight: 300;
-  font-size: 40px;
-  color: #2c3e50;
-  line-height: 100%;
-  text-align: center;
-  font-family: "proxima-nova", sans-serif;
-  text-decoration: none;
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.links {
-  width: 50%;
-  float: right;
+nav li {
+  width: 60px;
+  align-items: center;
 }
-.links li {
-  float: right;
-  padding-left: 20px;
+nav img {
+  height: 28px;
 }
-.links li a {
-  font-weight: 300;
-  display: block;
-  text-align: center;
-  font-family: "proxima-nova", sans-serif;
-  text-decoration: none;
-}
-.links img {
-  height: 24px;
-  padding-top: 8px;
-}
-#myBtn {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  padding: 0px;
-  height: 36px;
-}
-#myBtn2nd {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  font-family: "proxima-nova", sans-serif;
-  font-size: 18px;
-  padding: 0px;
-  color: #3498db;
-}
-button:focus {
-  outline: 0;
-}
-.modal {
+.email-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -87,90 +55,65 @@ button:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-content {
+.email-modal-content {
   background-color: #ecf0f1;
   margin: auto;
   padding: 15px;
   border: 2px solid #888;
   width: 300px;
   border-radius: 4px;
-  color: #2c3e50;
-  font-size: 22px;
+  font-size: 1.3rem;
 }
-.clipboard {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  font-family: "proxima-nova", sans-serif;
-}
-.email {
-  font-size: 22px;
+
+.email-span p {
   height: 24px;
-  margin: 0px;
-  color: #2c3e50;
-  font-weight: 400;
 }
-.email:hover,
-.email:focus {
+.email-span p:hover,
+.email-span p:focus {
   color: #3498db;
-  text-decoration: none;
   cursor: pointer;
 }
-.modal-content a {
-  text-decoration: none;
-  color: #2c3e50;
-  font-size: 22px;
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 400;
-}
-.modal-content a:hover,
-.modal-content a:focus {
+.email-modal-content a:hover,
+.email-modal-content a:focus {
   color: #3498db;
-  text-decoration: none;
   cursor: pointer;
 }
-.mikesPic {
-  width: 600px;
+body > img {
   border-radius: 4px;
 }
-.aboutMike {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 150%;
-  font-family: "proxima-nova", sans-serif;
+article {
   text-align: left;
 }
-.aboutMike p {
-  padding-top: 20px;
-  padding-bottom: 20px;
+article p {
+  padding: 20px 0;
+  line-height: 150%;
 }
-.aboutMike ul {
-  padding-top: 20px;
-  margin: 0%;
-  list-style: none;
-  padding-inline-start: 0px;
+main h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 20px 0 5px;
 }
-.aboutMike li {
-  font-size: 15px;
-  font-weight: 200;
-  line-height: 100%;
-  font-family: "proxima-nova", sans-serif;
+main ul {
+  padding-top: 20px;
+}
+main li {
+  font-size: 1rem;
   text-align: left;
   padding: 12px;
 }
-.aboutMike li::before {
+main li::before {
   content: "• ";
   margin: 10px;
   color: #3498db;
 }
-.aboutMike a {
-  text-decoration: none;
+footer {
+  text-align: left;
+  padding: 20px 0;
+}
+footer a {
   color: #3498db;
 }
 .skip-link {
@@ -184,4 +127,5 @@ button:focus {
 }
 .skip-link:focus {
   top: 0;
+  font-size: 1rem;
 }

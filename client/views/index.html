@@ -6,41 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/png" href="./images/mm.png" />
+    <link rel="stylesheet" type="text/css" href="./styles/cssReset.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
     <link
       rel="stylesheet"
       type="text/css"
       media="(max-width: 600px)"
       href="./styles/smallStyles.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="(min-width: 601px)"
-      href="./styles/styles.css"
-    />
     <title>Mike Mulderink</title>
   </head>
-
   <body>
     <a class="skip-link" href="#maincontent">Skip to about Mike</a>
-    <div class="bar">
-      <div class="nav">
-        <ul>
-          <li>
-            Mike Mulderink
-          </li>
-        </ul>
+    <header>
+      <div>
+        <h1>Mike Mulderink</h1>
       </div>
-      <div class="links">
+      <nav>
         <ul>
           <li>
-            <button id="myBtn">
-              <img src="./images/mail.svg" alt="gmail" title="image" />
-            </button>
-          </li>
-          <li>
-            <a href="https://angel.co/mikemulderink"
-              ><img src="./images/angellist.svg" alt="angellist" title="image"
+            <a href="https://github.com/Mulderink1"
+              ><img src="./images/github.svg" alt="github" title="image"
             /></a>
           </li>
           <li>
@@ -49,56 +35,56 @@
             /></a>
           </li>
           <li>
-            <a href="https://github.com/Mulderink1"
-              ><img src="./images/github.svg" alt="github" title="image"
+            <a href="https://angel.co/mikemulderink"
+              ><img src="./images/angellist.svg" alt="angellist" title="image"
             /></a>
           </li>
+          <li>
+            <button class="email-button">
+              <img src="./images/mail.svg" alt="gmail" title="image" />
+            </button>
+          </li>
         </ul>
+      </nav>
+    </header>
+    <div class="email-modal">
+      <div class="email-modal-content">
+        <span class="email-span">
+          <p>Mulderink.Mike@gmail.com</p>
+        </span>
+        <p>OR</p>
+        <a
+          href="https://www.google.com/search?q=cute+cat+pics&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig-orb943kAhV0KH0KHVnbBgYQ_AUIESgB&cshid=1566183372759118&biw=1680&bih=916&dpr=2"
+        >
+          See Cats
+        </a>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
+    <img
+      class="mikesPic"
+      src="https://mikemulderinksite.s3.amazonaws.com/Mike600.jpg"
+      alt="Mike Mulderink"
+      title="image"
+    />
+    <main>
+      <article>
         <p>
-          <button class="clipboard" onclick="myFunction()">
-            <p class="email">Mulderink.Mike@gmail.com</p>
-          </button>
-          <br />
-          <br />
-          or
-          <br />
-          <br />
-          <a
-            href="https://www.google.com/search?q=cute+cat+pics&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig-orb943kAhV0KH0KHVnbBgYQ_AUIESgB&cshid=1566183372759118&biw=1680&bih=916&dpr=2"
-          >
-            See Cats
-          </a>
+          Mike is a software engineer at SPR consulting in Chicago, Illinois and
+          freelance at M APPS based out of Los Angeles, California. SPR usually
+          has Mike working on full-stack applications while M APPS has Mike
+          building single page sites with a modern UI and a streamlined UX. When
+          work hours are over, Mike is continuously contributing to the
+          OpenSource ecosystem.
         </p>
-      </div>
-    </div>
-    <div>
-      <img
-        class="mikesPic"
-        src="https://mikemulderinksite.s3.amazonaws.com/Mike600.jpg"
-        alt="Mike Mulderink"
-        title="image"
-      />
-    </div>
-    <main id="maincontent" class="aboutMike">
-      <p>
-        Mike is a software engineer at SPR consulting in Chicago, Illinois and
-        freelance at M APPS based out of Los Angeles, California. SPR usually
-        has Mike working on full-stack applications while M APPS has Mike
-        building single page sites with a modern UI and a streamlined UX. When
-        work hours are over, Mike is continuously contributing to the OpenSource
-        ecosystem.
-        <br /><br />
-        Recently Mike spoke at Ethiq Engineering Speaker Series. He went over
-        the benefits of migrating to a distributed systems architecture,
-        "MicroServices". Before that, he spoke at CodeSmith about deploying
-        Restful services leveraging Node.js/Express. He also offers guidance to
-        new developers in the Los Angeles area; he is always happy to help.
-      </p>
-      Mike's day to day Tech Stack includes:
+        <p>
+          Recently Mike spoke at Ethiq Engineering Speaker Series. He went over
+          the benefits of migrating to a distributed systems architecture,
+          "MicroServices". Before that, he spoke at CodeSmith about deploying
+          Restful services leveraging Node.js/Express. He also offers guidance
+          to new developers in the Los Angeles area; he is always happy to help.
+        </p>
+      </article>
+      <h2>Mike's day to day Tech Stack includes:</h2>
       <ul>
         <li>JavaScript</li>
         <li>TypeScript</li>
@@ -112,8 +98,7 @@
         <li>CSS/CSS3</li>
         <li>Git</li>
       </ul>
-      <br />
-      Technologies Mike has worked with:
+      <h2>Technologies Mike has worked with:</h2>
       <ul>
         <li>Java/JVM</li>
         <li>C#/.net/EpiServer</li>
@@ -124,13 +109,15 @@
         <li>CI/CD/Travis</li>
         <li>Nginx</li>
       </ul>
+    </main>
+    <footer>
       <p>
         For inquiries, contact Mike through
-        <button id="myBtn2nd">Email</button>,
+        <button class="footer-email-button">Email</button>,
         <a href="https://www.linkedin.com/in/mikemulderink">LinkedIn</a> or
         <a href="https://angel.co/mikemulderink">Anglelist</a>.
       </p>
-    </main>
+    </footer>
   </body>
   <script src="./js/index.js"></script>
 </html>

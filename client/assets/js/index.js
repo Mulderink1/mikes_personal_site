@@ -1,12 +1,12 @@
 if (window.innerWidth > 600) {
-  const modal = document.getElementById("myModal"),
-    btn = document.getElementById("myBtn"),
-    span = document.getElementsByClassName("close")[0],
-    btn2nd = document.getElementById("myBtn2nd"),
-    email = document.querySelector(".email").innerHTML,
-    el = document.createElement("textarea");
+  const modal = document.getElementsByClassName("email-modal")[0];
+  const emailButton = document.getElementsByClassName("email-button")[0];
+  const emailSpan = document.getElementsByClassName("email-span")[0];
+  const footerEmailButton = document.getElementsByClassName("footer-email-button")[0];
+  const email = "mulderink.mike@gmail.com"
+  const el = document.createElement("textarea");
 
-  btn.onclick = function () {
+  emailButton.onclick = function () {
     modal.style.display = "block";
   };
 
@@ -16,11 +16,11 @@ if (window.innerWidth > 600) {
     }
   };
 
-  btn2nd.onclick = function () {
+  footerEmailButton.onclick = function () {
     modal.style.display = "block";
   };
 
-  function myFunction() {
+  emailSpan.onclick = function () {
     document.body.appendChild(el);
     el.value = email;
     el.select();
