@@ -36,6 +36,11 @@ body > article img {
   bottom: 0%;
   z-index: 2;
 }
+
+body > article img:hover {
+  cursor: pointer;
+}
+
 main {
   min-height: 100vh;
   display: flex;
@@ -55,6 +60,7 @@ main article {
   justify-content: flex-start;
   background-color: lightgray;
   border-radius: 2%;
+  cursor: pointer;
 }
 
 main article img {
@@ -65,4 +71,54 @@ article p {
   margin: 20px 0;
   font-size: 2rem;
   text-align: center;
+}
+
+.background-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  padding: 3% 18%;
+  cursor: pointer;
+}
+
+.background-div div {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  background-color: rgba(66, 66, 66, 0.9);
+  z-index: 6;
+  padding: 3%;
+  border-radius: 3%;
+  cursor: auto;
+  overflow: auto;
+}
+
+.background-div div::-webkit-scrollbar {
+  width: 16px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 12px;
+  background: #49aec0;
+  border: 5px solid #cceef4;
+  border-radius: 15px;
+}
+
+.background-div img {
+  display: block;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-div p {
+  text-align: center;
+  margin: 4%;
+  font-size: 4rem;
+  color: whitesmoke;
 }
