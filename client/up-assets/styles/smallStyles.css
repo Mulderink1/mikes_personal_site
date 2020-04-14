@@ -2,7 +2,15 @@ body {
   background-attachment: scroll;
 }
 
+body > article section {
+  width: 80%;
+}
+
 article section h1 {
   font-size: 1.8rem;
   line-height: 110%;
+}
+
+main {
+  background-color: darkgray;
 }
