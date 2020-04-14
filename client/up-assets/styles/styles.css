@@ -1,10 +1,13 @@
 body {
-  background-color: #add8e6;
+  background-image: url(../images/up-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
 body > article {
-  background: url(../images/up-main.jpg) no-repeat center center fixed;
-  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -38,6 +41,7 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-color: transparent;
 }
 
 main article {
