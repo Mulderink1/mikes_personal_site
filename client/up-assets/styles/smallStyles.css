@@ -2,8 +2,14 @@ body {
   background-attachment: scroll;
 }
 
+body > article {
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
 body > article section {
   width: 80%;
+  align-items: flex-start;
 }
 
 article section h1 {
@@ -12,5 +18,5 @@ article section h1 {
 }
 
 main {
-  background-color: darkgray;
+  background-color: #bf820f;
 }
