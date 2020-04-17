@@ -1,5 +1,5 @@
 body {
-  background-image: url(../images/up-main.jpg);
+  background-image: url(../images/nick-perez-duvq92-VCZ4-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,8 +19,8 @@ body > article section {
   width: 50%;
   padding: 5px;
   text-align: center;
-  background-color: #ab9d76;
-  border-radius: 5%;
+  background-color: #bf820f;
+  border-radius: 15px;
   z-index: 3;
 }
 
@@ -58,7 +58,7 @@ main article {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: lightgray;
+  background-color: #9ca6a2;
   border-radius: 2%;
   cursor: pointer;
 }
