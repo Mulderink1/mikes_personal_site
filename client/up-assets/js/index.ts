@@ -7,9 +7,7 @@ interface IthisObject {
   childNodes: Array<any>;
 }
 
-const downArrow = document.getElementsByClassName(
-  "down-arrow"
-)[0] as HTMLImageElement;
+const downArrow = document.getElementsByTagName("svg")[0] as any;
 
 downArrow.onclick = (): void => {
   document.getElementsByTagName("main")[0].scrollIntoView();

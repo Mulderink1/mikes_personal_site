@@ -7,7 +7,7 @@ body {
   height: 100vh;
 }
 
-body > article {
+body > section {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ body > article {
   z-index: 1;
 }
 
-body > article section {
+body > section section {
   width: 50%;
   padding: 5px;
   text-align: center;
@@ -24,21 +24,25 @@ body > article section {
   z-index: 3;
 }
 
-article section h1 {
+section h1 {
   font-size: 4rem;
   color: whitesmoke;
   line-height: 125%;
   z-index: 4;
 }
 
-body > article img {
+body > section svg {
   position: absolute;
   bottom: 0%;
   z-index: 2;
+  fill: #bf820f;
+  height: 160px;
+  width: 160px;
 }
 
-body > article img:hover {
+body > section svg:hover {
   cursor: pointer;
+  fill: #bf5f0b;
 }
 
 main {
