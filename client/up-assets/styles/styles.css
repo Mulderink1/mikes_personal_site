@@ -100,6 +100,7 @@ main > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 main div div {
@@ -111,10 +112,6 @@ main div div {
   padding: 20px;
   border-radius: 3px;
   cursor: auto;
-}
-
-main div div div {
-  max-height: 80%;
 }
 
 main div img {
