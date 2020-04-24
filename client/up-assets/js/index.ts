@@ -7,12 +7,6 @@ interface IthisObject {
   childNodes: Array<any>;
 }
 
-const downArrow = document.getElementsByTagName("svg")[0] as any;
-
-downArrow.onclick = (): void => {
-  document.getElementsByTagName("main")[0].scrollIntoView();
-};
-
 const pictureModal: Function = (thisObject: IthisObject): void => {
   if (window.innerWidth > 1155) {
     const imageData: IimageData = {
