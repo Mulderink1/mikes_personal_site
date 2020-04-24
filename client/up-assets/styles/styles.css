@@ -67,7 +67,7 @@ main {
 
 main article {
   width: 380px;
-  height: auto;
+  height: fit-content;
   padding: 20px;
   margin: 5%;
   display: flex;
@@ -89,7 +89,7 @@ article p {
   text-align: center;
 }
 
-.background-div {
+main > div {
   position: fixed;
   top: 0;
   left: 0;
@@ -97,44 +97,34 @@ article p {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
-  padding: 3% 18%;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.background-div div {
-  height: auto;
-  width: auto;
-  max-height: 100%;
+main div div {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(66, 66, 66, 0.9);
   z-index: 6;
-  padding: 3%;
+  padding: 20px;
   border-radius: 3px;
   cursor: auto;
-  overflow: auto;
 }
 
-.background-div div::-webkit-scrollbar {
-  width: 16px;
-  border-radius: 20px;
+main div div div {
+  max-height: 80%;
 }
 
-::-webkit-scrollbar-thumb {
-  width: 12px;
-  background: #49aec0;
-  border: 5px solid #cceef4;
-  border-radius: 15px;
+main div img {
+  max-height: 60vh;
+  max-width: fit-content;
+  margin: auto;
 }
 
-.background-div img {
-  display: block;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.background-div p {
+main div p {
   text-align: center;
-  margin: 4%;
   font-size: 4rem;
   color: whitesmoke;
 }

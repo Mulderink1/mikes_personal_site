@@ -15,9 +15,8 @@ const pictureModal: Function = (thisObject: IthisObject): void => {
     };
 
     const backgoundDiv: HTMLDivElement = document.createElement("div");
-    backgoundDiv.setAttribute("class", "background-div");
-
     const modalDiv: HTMLDivElement = document.createElement("div");
+    const imageDiv: HTMLDivElement = document.createElement("div");
 
     const imageTag: HTMLImageElement = document.createElement("img");
     imageTag.setAttribute("src", imageData.src);
@@ -25,11 +24,10 @@ const pictureModal: Function = (thisObject: IthisObject): void => {
     const paragraphTag: HTMLParagraphElement = document.createElement("p");
     paragraphTag.innerHTML = imageData.text;
 
-    modalDiv.appendChild(imageTag);
+    imageDiv.appendChild(imageTag);
+    modalDiv.appendChild(imageDiv);
     modalDiv.appendChild(paragraphTag);
-
     backgoundDiv.appendChild(modalDiv);
-
     document.getElementsByTagName("main")[0].appendChild(backgoundDiv);
 
     window.onclick = (event: any): void => {
