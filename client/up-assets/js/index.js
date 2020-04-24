@@ -1,7 +1,3 @@
-var downArrow = document.getElementsByTagName("svg")[0];
-downArrow.onclick = function () {
-    document.getElementsByTagName("main")[0].scrollIntoView();
-};
 var pictureModal = function (thisObject) {
     if (window.innerWidth > 1155) {
         var imageData = {
