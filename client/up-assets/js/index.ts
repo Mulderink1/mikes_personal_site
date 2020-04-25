@@ -32,7 +32,7 @@ const pictureModal: Function = (thisObject: IthisObject): void => {
 
     window.onclick = (event: any): void => {
       if (event.target === backgoundDiv) {
-        backgoundDiv.style.display = "none";
+        backgoundDiv.parentNode.removeChild(backgoundDiv);
         window.onclick = undefined;
       }
     };

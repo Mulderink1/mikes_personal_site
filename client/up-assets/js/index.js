@@ -18,7 +18,7 @@ var pictureModal = function (thisObject) {
         document.getElementsByTagName("main")[0].appendChild(backgoundDiv_1);
         window.onclick = function (event) {
             if (event.target === backgoundDiv_1) {
-                backgoundDiv_1.style.display = "none";
+                backgoundDiv_1.parentNode.removeChild(backgoundDiv_1);
                 window.onclick = undefined;
             }
         };
