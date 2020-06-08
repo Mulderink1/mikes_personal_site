@@ -4,6 +4,7 @@ body {
 }
 
 body > div {
+  background-color: #bf820f;
   background-image: url(../images/nick-perez-duvq92-VCZ4-unsplash.jpg);
   background-size: cover;
   height: 100vh;
